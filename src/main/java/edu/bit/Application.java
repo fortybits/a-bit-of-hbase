@@ -28,6 +28,7 @@ public class Application {
             putRow(connection.getTable(TABLE_NAME));
             System.out.println(">>> Successfully Created the table and inserted a row " + admin);
             Result result = connection.getTable(TABLE_NAME).get(new Get(ROW_ID));
+            System.out.println(result);
         } catch (Exception e) {
             e.printStackTrace();
         }
